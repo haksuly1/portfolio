@@ -1,0 +1,691 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+a {
+  color: #357b70;
+}
+
+
+ul{
+  list-style: none;
+}
+
+/* setting the default width of an element to include the padding and the border via the box-sizing property and border-box value */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.send{
+  border: none;
+  font-family: inherit;
+  background-color: #228b22;
+  color: white;
+  text-decoration: none;
+  padding: 0.1px;
+  border-radius: 0.01px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+body{
+  font-family: 'lato', Helvetica;
+  background-color: #faf0e6;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+header{
+  font-family: 'lato', Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main{
+  font-family: 'lato', Helvetica;
+  text-align: center;
+  font-weight: 400;
+  font-size: Var(--font-size);
+  line-height: 1.6;
+}
+.displayed {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.area{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  color: #357b70;
+}
+
+a:visited {
+  /* visited link */
+  color: #EE4B2B;
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+a:active {
+  /* selected link */
+  color: #489C79;
+}
+
+input, texture, select, button {
+  font-family: system-ui;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #faf0e6;
+  color: Var(--approximately-snow);
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px 15px;
+  border-radius: 5px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.6;
+}
+
+.button__secondary {
+  background-color: #FFD700;
+  color: #2b2b2b;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+a {/* element selector - link appears in blue color */
+  color: #3299ff;
+}
+
+.list__item li:first-child{
+  background: #4CA6FF;
+}
+
+.list__item li:nth-child(2){
+  background: #21CCBB;
+}
+
+.list__item li:nth-child(3){
+  background: #FFD700;
+}
+
+.list__item li:nth-child(4){
+  background: #F7347A;
+}
+
+/* pointer to my website */
+.my-link {
+  color: #0000ff;
+}
+
+.profile__portrait {
+  float: left;
+}
+
+.page-footer {
+  clear: both;
+}
+/* adjust the profile photo to rounded edge by using border-radius */
+.profile__portrait {
+  width: 250px;
+  margin-right: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* All content elements are arranged in a single row or column. Gives page-footer class the display property with a value of flex */
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+/* parent container to be a Flexbox container and cover the full width of your page with 20px of padding on all sides.*/
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+/* A base width of 200px but also the ability to shrink along the same ratio */
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+/* To target the navigation in your CSS, you’ll use the pseudo-selector :last-child as it’s the last child of the two flexbox child items*/
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+/* Get rid of the dots from the unordered list and reformat it in horizontal format */
+.navigation-list {
+  list-style-type: none;
+}
+/* align list items in a row (inline-block) and give them some space in-between them */
+.navigation-list li{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* Sets Background color where project-items are listed */
+.grid__item {
+  background-color: lightgray;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Specifies sizes of colums and rows */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px;
+  -ms-grid-rows: 300px 300px;
+  grid-template-rows: 300px 300px;
+}
+.grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.grid > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.grid > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.grid > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+
+/* Sets colums and row sizes to 300px for both columns and rows */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px;
+}
+
+
+/* You tell the last child item that it should 1. Be in the third column, 2. Start in the first row, and 3. End at the beginning of the third row */
+.grid__item:last-child {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-column-span: 0;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+  grid-row-end: 3;
+}
+/* Another way top write the above */
+.grid__item:last-child {
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+/* new meassurement units used to allocated available space for colums and rows */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+/* Space (top/bottom and right/left from inside the grid */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+
+
+/* Sets Background color where project-items are listed */
+.address__item {
+  background-color: lightgray;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+/* Display for showcase__item */
+.showcase__item {
+  background-color: #FF5733;
+  padding-bottom: auto;
+  padding-left: auto;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  margin: 50px;
+}
+
+
+
+/* Changes layout from a 3-column grid to a 1-column grid by simply passing 1fr to the grid-template-columns property */
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+/* Go from a 3-column grid to a 2-column grid when the screen’s width is greater than 500px but less than 750px */
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/* The media query for shared code - which can be shortened to simply (max-width: 750px) */
+@media all and (max-width: 750px){
+  /* shared code */
+}
+
+/* Final complete code for all three media queries housing the properties unique to them */
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/* CSS rule-set */
+button,
+.button1,
+.button2,
+.button3,
+.my-input {
+/* your styling goes here */
+}
+
+button,
+.button {
+/* your styling goes here */
+}
+
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+/* your styling goes here */
+}
+
+/* opacity transition that lasts 0.2s to the button */
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: #357B70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: #357B70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+
+.button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+
+button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+@-webkit-keyframes color-change {
+  from {
+    fill: #EDC655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  from {
+    fill: #EDC655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #EDC655;
+  }
+  50% {
+    fill: #FCFFAD;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+/* Animation Style CSS code on (.sun) - Long method */
+.sun {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+/* Animation Style CSS code on (.sun) - Short method */
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+/* To move to the right across the screen. Call its keyframe animation cloud-move */
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+/* To move cloud-front - Long method */
+.cloud-front {
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-name: cloud-move;
+          animation-name: cloud-move;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+/* To move cloud-front - Short method */
+.cloud-front {
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+/* keyframe animation for cloud-move-reverse - Long Method */
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+/* keyframe animation for cloud-move-reverse - short Method */
+.cloud-back {
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+          animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* Animation of "Hello World!" */
+.welcome {
+  -webkit-animation: 30s welcome-move infinite alternate linear;
+          animation: 30s welcome-move infinite alternate linear;
+}
+
+@-webkit-keyframes welcome-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+ to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+@keyframes welcome-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+ to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
