@@ -1,116 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Contact Me</title>
-  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/favicon-32x32.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.production.css">
-</head>
-<body>
-  <header class="page-header">
-    <!-- My logo -->
-    <img src="img/hakeem-logo.png" alt="hakeem logo" class="page-header__item">
-    <!-- Page Navigation Section -->
-    <nav class="main-Navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item"> Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item"> About me</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active"> Contact</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item"> Work</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact Me</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <!-- My logo -->
+      <img
+        src="img/hakeem-logo.png"
+        alt="hakeem logo"
+        class="page-header__item"
+      />
+      <!-- Page Navigation Section -->
+      <nav class="main-Navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">
+              Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">
+              About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+            >
+              Contact</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item">
+              Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <a class="email-me button" href="mailto:haksuly1@gmail.com">Email me</a>
+    <a class="email-me button" href="mailto:haksuly1@gmail.com">Email me</a>
 
-  <!-- My Contact Information -->
-  <main>
-    <h1 id="contact">My Contact</h1>
-    <div class="contact">
-      <div class="contact__item">
-        <h3>OFFICE/HOME ADDRESS</h3>
-        Zollvereinstraße 64
-        <br>45327 Essen, Deutschland.
+    <!-- My Contact Information -->
+    <main>
+      <h1 id="contact">My Contact</h1>
+      <div class="contact">
+        <div class="contact__item">
+          <h3>OFFICE/HOME ADDRESS</h3>
+          Zollvereinstraße 64
+          <br />45327 Essen, Deutschland.
+        </div>
+        <div class="contact__item">
+          <h3>TELEPHONE/FAX</h3>
+          <a href="tel:+4917681281479">+49 176 81281479</a>
+        </div>
+        <div class="contact__item">
+          <h3>EMAIL</h3>
+          I pick my emails on the go.
+          <br /><a href="mailto:haksuly1@gmail.com"> haksuly1@gmail.com</a>
+        </div>
+        <div class="contact__item">
+          <h3>URL</h3>
+          Check out some of my medium
+          <br />
+          fashion events in pictures and videos. <br /><a
+            href="http://xclusivelynative.com/"
+            target="_blank"
+          >
+            www.xclusivelynative.com</a
+          >
+          <br /><a href="https://youtube.com/xnative" target="_blank">
+            Xnative Youtube Channel</a
+          >
+        </div>
       </div>
-      <div Class="contact__item">
-        <h3>TELEPHONE/FAX</h3>
-        <a href="tel:+4917681281479">+49 176 81281479</a>
-      </div>
-      <div class="contact__item">
-        <h3>EMAIL</h3>
-        I pick my emails on the go.
-        <br><a href="mailto:haksuly1@gmail.com"> haksuly1@gmail.com</a>
-      </div>
-      <div Class="contact__item">
-        <h3>URL</h3>
-        Check out some of my medium
-        <br> fashion events in pictures and videos.
-        <br><a href="http://xclusivelynative.com/" target="_blank"> www.xclusivelynative.com</a>
-        <br><a href="https://youtube.com/xnative" target="_blank"> Xnative Youtube Channel</a>
-      </div>
-    </div>
 
-    <!-- Form-->
+      <!-- Form-->
 
-    <div class="form">
-      <div class="form__item">
-        <h2>Contact Form</h2>
-        <form action="process.php" method="post" id="contact-form">
-          <label class="standard-label"></label>
-          <select name="identity">
-            <option value="private"> Private</option>
-            <option value="corporate"> Corporate</option>
-          </select>
-        </form>
+      <div class="form">
+        <div class="form__item">
+          <h2>Contact Form</h2>
+          <form action="process.php" method="post" id="contact-form">
+            <label class="standard-label"></label>
+            <select name="identity">
+              <option value="private"> Private</option>
+              <option value="corporate"> Corporate</option>
+            </select>
+          </form>
         </div>
 
         <div>
           <label class="standard-label"> E-mail (required):</label>
-          <input type="text" name="email" placeholder="Enter Email" required>
+          <input type="text" name="email" placeholder="Enter Email" required />
         </div>
 
         <div>
           <label class="standard-label"> Telephone (required):</label>
-          <input type="tel" name="telephone" placeholder="Enter-telephone" pattern="\d{3}[\-]d{3}[\-]{d4}" required>
+          <input
+            type="tel"
+            name="telephone"
+            placeholder="Enter-telephone"
+            pattern="\d{3}[\-]d{3}[\-]{d4}"
+            required
+          />
         </div>
 
         <div>
           <label class="standard-label">Message (Max. 240 characters):</label>
-          <textarea placeholder="Type message" maxlength="240" required></textarea>
+          <textarea
+            placeholder="Type message"
+            maxlength="240"
+            required
+          ></textarea>
         </div>
 
         <div>
           <button type="button">Send Message</button>
         </div>
       </div>
-  </main>
+    </main>
 
-  <footer class="page-footer">
-    <div class="social-media">
-      <p>Find me on platforms below</p>
-      <img src="img/github_icon.svg" alt="Github">
-      <img src="img/twitter_icon.svg" alt="Twitter">
-      <img src="img/linkedin_icon.svg" alt="Linkedin">
-    </div>
+    <footer class="page-footer">
+      <div class="social-media">
+        <p>Find me on platforms below</p>
+        <img src="img/github_icon.svg" alt="Github" />
+        <img src="img/twitter_icon.svg" alt="Twitter" />
+        <img src="img/linkedin_icon.svg" alt="Linkedin" />
+      </div>
 
-    <div class="copyright">
-      <h6>Hakeem Kayode Sulyman - &copy; 2021. All rights reserved</h6>
-    </div>
+      <div class="copyright">
+        <h6>Hakeem Kayode Sulyman - &copy; 2021. All rights reserved</h6>
+      </div>
+    </footer>
 
-  </footer>
-
-  <script src="js/tota11y.min.js"></script>
-</body>
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
