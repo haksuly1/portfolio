@@ -21,7 +21,7 @@ a {
   color: var(--primary-color);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -30,61 +30,64 @@ ul{
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: var(--primary-color);
   line-height: var(--line-height);
 }
 
-header{
+header {
   font-weight: var(--font-weight);
   font-size: var(--font-size);
   line-height: var(--line-height);
 }
 
-main{
+main {
   text-align: center;
   font-weight: var(--font-weight);
   font-size: Var(--font-size);
   line-height: var(--line-height);
 }
 
-h1{
+h1 {
   font-size: 30px;
   font-weight: var(--font-weight);
   color: var(--primary-color);
 }
 
-h2{
+h2 {
   font-size: 24px;
   font-weight: var(--font-weight);
 }
 
-h3{
+h3 {
   font-size: 18px;
   font-weight: var(--font-weight);
   color: var(--primary-color);
 }
 
-a{
+a {
   background-color: var(--primarycolor);
 }
 
+/* visited link */
 a:visited {
-  /* visited link */
   color: var(--red-color);
 }
 
-a:hover, a:focus {
-  /* No underlining when hovering over a link */
+/* No underlining when hovering over a link */
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
+/* selected link */
 a:active {
-  /* selected link */
   color: var(--primary-color);
 }
 
-input, texture, select, button {
+input,
+select,
+button {
   font-family: system-ui;
 }
 
@@ -92,23 +95,22 @@ input, texture, select, button {
   text-decoration: none;
 }
 
-.navigation-list__item{
+.navigation-list__item {
   display: inline-block;
   background-color: inherit;
   width: 100%;
 }
 
-.navigation-list__item li{
+.navigation-list__item li {
   color: var(--color);
 }
-
 
 .button__secondary {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
 
-.hobby{
+.hobby {
   display: grid;
   border: 1px solid rgba(0 0 0.3);
   margin-right: 50px;
@@ -117,19 +119,19 @@ input, texture, select, button {
   padding-right: 3%;
 }
 
-.list__item li:first-child{
+.list__item li:first-child {
   background: var(--light-blue);
 }
 
-.list__item li:nth-child(2){
+.list__item li:nth-child(2) {
   background: var(--light-green);
 }
 
-.list__item li:nth-child(3){
+.list__item li:nth-child(3) {
   background: var(--light-yellow);
 }
 
-.list__item li:nth-child(4){
+.list__item li:nth-child(4) {
   background: var(--light-red);
 }
 
@@ -163,27 +165,27 @@ input, texture, select, button {
 
 /* All content elements are arranged in a single row or column. Gives page-footer class the display property with a value of flex */
 .page-footer {
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 /* parent container to be a Flexbox container and cover the full width of your page with 20px of padding on all sides.*/
 
 /* Get rid of the dots from the unordered list and reformat it in horizontal format */
 .navigation-list {
   list-style-type: none;
-  display:inline-block;
+  display: inline-block;
 }
 /* align list items in a row (inline-block) and give them some space in-between them */
-.navigation-list__item li{
-  display:inline-block;
+.navigation-list__item li {
+  display: inline-block;
   margin-left: 15px;
 }
 
-.my-work{
-display: grid;
-margin-left: 500px;
+.my-work {
+  display: grid;
+  margin-left: 500px;
 }
 
 /* Sets Background color where project-items are listed */
@@ -228,17 +230,17 @@ margin-left: 500px;
   margin-top: 20px;
 }
 
-.welcome{
+.welcome {
   padding-bottom: 20px;
   padding-left: 0;
   padding-right: 30%;
-  }
+}
 
-.welcome h1{
+.welcome h1 {
   color: var(--primary-color);
 }
 /* contact__items Here*/
-.contact{
+.contact {
   display: grid;
   border: 1px solid rgba(0 0 0.3);
   border-radius: 10%;
@@ -249,24 +251,23 @@ margin-left: 500px;
   padding-right: 10px;
   padding-bottom: 20px;
 }
-
-.home{
+*/ .home {
   display: grid;
   padding-left: 10px;
   padding-right: 10px;
   float: left;
-  text-align:center;
+  text-align: center;
   padding-bottom: 20px;
   border: 1px solid rgba(0 0 0.3);
 }
 
 .home h1,
-  h2{
+h2 {
   color: var(--primary-color);
 }
 /* styling of the fixed email button on all pages */
-.email-me{
-  position:fixed;
+.email-me {
+  position: fixed;
   top: 400px;
   margin-left: 20px;
 }
@@ -285,27 +286,29 @@ margin-left: 500px;
   border: 1px solid rgba(0 0 0.3);
   align-content: center;
 }
-.form input{
+.form input {
   border: 0;
   border-bottom: 1px solid black;
   margin-top: 15px;
   width: 60%;
 }
-.form textarea{
+.form textarea {
   margin-top: 15px;
   width: 60%;
 }
-.form button{
+.form button {
   margin-top: 15px;
 }
-.link a{
+.link a {
   display: inline-block;
   background: none;
   margin-right: 0;
   padding-left: 30%;
 }
+*/
+
 /* styling for first section of about page */
-.first-section{
+.first-section {
   display: grid;
   border: 1px solid rgba(0 0 0.3);
   border-radius: 10%;
@@ -317,39 +320,40 @@ margin-left: 500px;
   padding-bottom: 20px;
 }
 /* for copyright line styling */
-.copyright h6{
+.copyright h6 {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
 
 h1 {
-    font-size: 22px;
-  }
+  font-size: 22px;
+}
 
 /* opacity transition that lasts 0.2s to the button */
-.button, button {
-/* overwrites browser defaults and resets the border */
-border: none;
-display: inline-block;
-/* takes the font from the outer container */
-font-family: inherit;
-/* styles the button */
-background-color: var(--primary-color);
-color: var(--white-color);
-text-decoration: none;
-padding: 10px;
-border-radius: 3px;
-/* width of the border, type, color */
-border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-transition-duration: 0.2s;
-transition-property: opacity;
+.button,
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 /* lets the mouse appear as a hand when hovering over the button */
 /* reduces the opacity of the button to 80% */
 button:hover,
-button:focus{
-cursor: pointer;
-opacity: 0.8;
+button:focus {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 /* Changes layout from a 3-column grid to a 1-column grid by simply passing 1fr to the grid-template-columns property */
@@ -380,7 +384,7 @@ opacity: 0.8;
     font-size: 22px;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
@@ -395,7 +399,7 @@ opacity: 0.8;
 }
 
 /* The media query for shared code - which can be shortened to simply (max-width: 750px) */
-@media all and (max-width: 750px){
+@media all and (max-width: 750px) {
   /* shared code */
 }
 
@@ -405,7 +409,7 @@ opacity: 0.8;
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -415,86 +419,86 @@ opacity: 0.8;
     grid-gap: 10px;
   }
 
-@keyframes color-change {
-  from {
-    fill: var(--deep-yellow);
+  @keyframes color-change {
+    from {
+      fill: var(--deep-yellow);
+    }
+    to {
+      fill: var(--orange);
+    }
   }
-  to {
-    fill: var(--orange);
-  }
-}
 
-@keyframes color-change {
-  0% {
-    fill: var(--deep-yellow);
+  @keyframes color-change {
+    0% {
+      fill: var(--deep-yellow);
+    }
+    50% {
+      fill: var(--faint-yellow);
+    }
+    100% {
+      fill: var(--orange);
+    }
   }
-  50% {
-    fill: var(--faint-yellow);
-  }
-  100% {
-    fill: var(--orange);
-  }
-}
 
-/* Animation Style CSS code on (.sun) - Long method */
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
+  /* Animation Style CSS code on (.sun) - Long method */
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
 
-/* Animation Style CSS code on (.sun) - Short method */
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-/* To move to the right across the screen. Call its keyframe animation cloud-move */
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
+  /* Animation Style CSS code on (.sun) - Short method */
+  .sun {
+    animation: 4s color-change infinite alternate linear;
   }
-  to {
-    transform: translate(200px, 50px);
+  /* To move to the right across the screen. Call its keyframe animation cloud-move */
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
   }
-}
-/* To move cloud-front - Long method */
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-/* To move cloud-front - Short method */
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-/* keyframe animation for cloud-move-reverse - Long Method */
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
+  /* To move cloud-front - Long method */
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
-  to {
-    transform: translate(100px, 48px);
+  /* To move cloud-front - Short method */
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
   }
-}
-/* keyframe animation for cloud-move-reverse - short Method */
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
+  /* keyframe animation for cloud-move-reverse - Long Method */
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+  /* keyframe animation for cloud-move-reverse - short Method */
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
 
-/* Animation of "Hello World!" */
-.welcome {
-  animation: 30s welcome-move infinite alternate linear;
-}
+  /* Animation of "Hello World!" */
+  .welcome {
+    animation: 30s welcome-move infinite alternate linear;
+  }
 
-@keyframes welcome-move {
-  from {
-    transform: translate(0px, 50px);
-  }
- to {
-    transform: translate(200px, 50px);
+  @keyframes welcome-move {
+    from {
+      transform: translate(0px, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
   }
 }
-/* end */
