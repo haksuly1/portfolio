@@ -1,496 +1,270 @@
-/* */
+/*
+colours used 
+text colour (dark grey): 02040A
+primary colour (dark blue green): #0E57DC
+secondary colour (golden yellow): #EAD084
+Check that the contrast works! contrast ration checker
+*/
+
+/* UPDATE: from now on the html files have to refer to style.prodution.css. You have to:
+Copy the content of your CSS file and paste it into the PostCSS playground for converting variables.
+Copy the output of the PostCSS playground and paste it into the autoprefixer.
+Paste the output of the autoprefixer into the style.production.css.
+*/
+
 :root {
-  --font-family: 'lato', Helvetica;
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
-  --deep-yellow: #eace09;
-  --faint-yellow: #ffffbf;
-  --font-weight: 400;
-  --line-height: 1.6;
-  --font-size: 16px;
-  --color: #0000ff;
-  --white-color: #fff;
-  --red-color: #ff0000;
-  --lightgrey: #d3d3d3;
-  --font-weight: bold;
-  --color: #000;
+  --primary-color: #0E57DC;
+  --secondary-color: #EAD084;
+  /* the exercise tells me to replace all colors, but does it make sense to replace colors like white and black? 
+  or the red color for a visited website? I am never going to repeat the color red apart from this purpose*/
 }
 
-/* links appear in blue color */
-a {
-  color: var(--primary-color);
-}
-
-ul {
-  list-style: none;
-}
-
-/* setting the default width of an element to include the padding and the border via the box-sizing property and border-box value */
 * {
   box-sizing: border-box;
 }
-/*
-body {
-  background-color: var(--primary-color);
-  line-height: var(--line-height);
-}
-*/
-header {
-  font-weight: var(--font-weight);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-}
 
-main {
-  text-align: center;
-  font-weight: var(--font-weight);
-  font-size: Var(--font-size);
-  line-height: var(--line-height);
+body {
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1 {
   font-size: 30px;
-  font-weight: var(--font-weight);
-  color: var(--primary-color);
+  font-weight: 700;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: var(--font-weight);
+  font-weight: 700;
 }
 
 h3 {
   font-size: 18px;
-  font-weight: var(--font-weight);
-  color: var(--primary-color);
-}
-/*
-a {
-  background-color: var(--primarycolor);
-}
-*/
-/* visited link */
-a:visited {
-  color: var(--red-color);
+  font-weight: 700;
+  text-decoration: underline;
 }
 
-/* No underlining when hovering over a link */
-a:hover,
-a:focus {
-  text-decoration: none;
-}
 
-/* selected link */
-a:active {
+.github-anchor {
   color: var(--primary-color);
 }
 
-input,
-select,
-button {
-  font-family: system-ui;
+.github-anchor:hover {
+  color: red;
 }
 
-.navigation-list__item--active {
+.github-anchor:active {
+  color: var(--secondary-color);
+}
+
+.button {
+
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  display: inline-block;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(--primary-color);
+  color: white;
   text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
-.navigation-list__item {
-  display: block;
-  width: 100%;
-  padding-left: 20px;
+.button:hover,
+button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  color: var(--secondary-color);
 }
 
-.navigation-list__item li {
-  color: var(--color);
-}
-
-.button__secondary {
-  color: var(--white-color);
-}
-
-.hobby {
-  display: grid;
-  border: 1px solid rgba(0 0 0.3);
-  margin-right: 50px;
-  margin-left: 50px;
-  padding-right: 3%;
-}
-/* adjust the profile photo to rounded edge by using border-radius */
-.profile__portrait {
-  width: 250px;
-  height: auto;
+.profile_portrait {
+  float: left;
+  width: 240px;
+  height: 240px;
+  margin-right: 70px;
   border-radius: 50%;
-  margin-right: 10px;
 }
 
 .page-footer {
   clear: both;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-/*
+
+.profile {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.Monica-logo {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+}
+
 .page-header {
   display: flex;
   width: 100%;
   padding: 20px;
 }
-*/
-/* A base width of 200px but also the ability to shrink along the same ratio */
-.page-header__item {
+
+.page-header_item {
   flex: 0 1 200px;
 }
 
-/* To target the navigation in your CSS, you’ll use the pseudo-selector :last-child as it’s the last child of the two flexbox child items*/
-.page-header__item:last-child {
+.page-header .page-header_item:last-child {
   flex-grow: 1;
   text-align: right;
 }
 
-/* All content elements are arranged in a single row or column. Gives page-footer class the display property with a value of flex */
-.page-footer {
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-/* parent container to be a Flexbox container and cover the full width of your page with 20px of padding on all sides.*/
-
-/* Get rid of the dots from the unordered list and reformat it in horizontal format */
 .navigation-list {
   list-style-type: none;
   display: inline-block;
 }
-/* align list items in a row (inline-block) and give them some space in-between them */
-.navigation-list__item li {
+
+.navigation-list li {
   display: inline-block;
   margin-left: 15px;
 }
 
-.my-work {
+.navigation-list_item:hover {
+  color: red;
+}
+
+.navigation-list_item:active {
+  color: var(--secondary-color);
+}
+
+.project-list {
   display: grid;
-  margin-left: 500px;
-}
-
-/* Sets Background color where project-items are listed */
-.grid__item {
-  padding-bottom: 15px;
-  padding-left: 15px;
-  border: 1px solid black;
-  box-sizing: border-box;
-}
-/* Specifies sizes of colums and rows */
-.grid {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 300px 300px;
-}
-/* Sets colums and row sizes to 300px for both columns and rows */
-.grid {
-  grid-template-columns: 300px 300px 300px;
-}
-/* You tell the last child item that it should 1. Be in the third column, 2. Start in the first row, and 3. End at the beginning of the third row */
-
-.grid__item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-/* Another way top write the above */
-.grid__item:last-child {
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
-}
-
-/* new meassurement units used to allocated available space for colums and rows */
-
-.grid {
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
-/* Space (top/bottom and right/left from inside the grid */
-
-.grid {
-  padding-left: 5px;
-  padding-top: 40px;
-  margin-top: 20px;
+.project-list_item {
+  background-color: var(--secondary-color);
+  width: auto;
+  min-height: auto;
+  display: inline-block;
 }
 
-.welcome {
-  padding-bottom: 20px;
-  padding-left: 0;
-  padding-right: 30%;
-}
-
-.welcome h1 {
+.project-list_item--githublink {
   color: var(--primary-color);
 }
-/* contact__items Here*/
-.contact {
-  display: grid;
-  border: 1px solid rgba(0 0 0.3);
-  border-radius: 10%;
-  margin-right: 25%;
-  margin-left: 25%;
-  margin-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-}
-.home {
-  display: grid;
-  flex-direction: column;
-  margin-right: 25%;
-  margin-left: 25%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  box-sizing: border-box;
-  border-radius: 10%;
-  border: 1px solid rgba(0 0 0.3);
-  align-content: center;
+
+.project-list_item--githublink:hover {
+  color: red;
 }
 
-.home h1,
-h2 {
-  color: var(--primary-color);
-}
-/* styling of the fixed email button on all pages */
-.email-me {
-  position: fixed;
-  top: 400px;
-  margin-left: 20px;
-}
-/* styling of the form in the contact page */
-.form {
-  display: grid;
-  flex-direction: column;
-  margin-right: 25%;
-  margin-left: 25%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  box-sizing: border-box;
-  border-radius: 10%;
-  border: 1px solid rgba(0 0 0.3);
-  align-content: center;
-}
-.form input {
-  border: 0;
-  border-bottom: 1px solid black;
-  margin-top: 15px;
-  width: 60%;
-}
-.form textarea {
-  margin-top: 15px;
-  width: 60%;
-}
-.form button {
-  margin-top: 15px;
-}
-.link a {
-  display: inline-block;
-  margin-right: 0;
-  padding-left: 30%;
-}
-*/
-
-/* styling for first section of about page */
-.first-section {
-  display: grid;
-  border: 1px solid rgba(0 0 0.3);
-  border-radius: 10%;
-  margin-right: 15%;
-  margin-left: 15%;
-  margin-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-}
-/* for copyright line styling */
-.copyright h6 {
-  background-color: var(--primary-color);
-  color: var(--white-color);
+.project-list_item--githublink:active {
+  color: var(--secondary-color);
 }
 
-h1 {
-  font-size: 22px;
-}
-
-/* opacity transition that lasts 0.2s to the button */
-.button,
-button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the button */
-
-  color: var(--white-color);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition-duration: 0.2s;
-  transition-property: opacity;
-}
-/* lets the mouse appear as a hand when hovering over the button */
-/* reduces the opacity of the button to 80% */
-button:hover,
-button:focus {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-/* Changes layout from a 3-column grid to a 1-column grid by simply passing 1fr to the grid-template-columns property */
+/* the following overwrites the grid settings above. Media queries
+adapt CSS rules for different devices */
 
 @media all and (max-width: 500px) {
-  .grid {
+  .project-list {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
-  }
 }
 
-/* Go from a 3-column grid to a 2-column grid when the screen’s width is greater than 500px but less than 750px */
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
-  }
-}
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
-  }
-}
-
-/* The media query for shared code - which can be shortened to simply (max-width: 750px) */
-@media all and (max-width: 750px) {
-  /* shared code */
-}
-
-/* Final complete code for all three media queries housing the properties unique to them */
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
+@media all and (min-width: 500px) and (max-width:750px) {
+  .project-list {
     grid-template-columns: 1fr 1fr;
   }
+
 }
+
 @media all and (max-width: 750px) {
-  .grid {
+  .project-list {
     grid-gap: 10px;
   }
 
-  @keyframes color-change {
-    from {
-      fill: var(--deep-yellow);
-    }
-    to {
-      fill: var(--orange);
-    }
+  .project-list_item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
   }
 
-  @keyframes color-change {
-    0% {
-      fill: var(--deep-yellow);
-    }
-    50% {
-      fill: var(--faint-yellow);
-    }
-    100% {
-      fill: var(--orange);
-    }
+  .h1 {
+    font-size: 22px;
   }
-  /* Animation Style CSS code on (.sun) - Long method */
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+}
+
+.about-body {
+  text-align: center;
+}
+
+.contact-body {
+  text-align: center;
+}
+
+.hobby-list {
+  list-style-type: none;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
   }
 
-  /* Animation Style CSS code on (.sun) - Short method */
-  .sun {
-    animation: 4s color-change infinite alternate linear;
-  }
-  /* To move to the right across the screen. Call its keyframe animation cloud-move */
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-  /* To move cloud-front - Long method */
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-  /* To move cloud-front - Short method */
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-  }
-  /* keyframe animation for cloud-move-reverse - Long Method */
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-  /* keyframe animation for cloud-move-reverse - short Method */
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  50% {
+    fill: #fcffad;
   }
 
-  /* Animation of "Hello World!" */
-  .welcome {
-    animation: 30s welcome-move infinite alternate linear;
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translateX(446px);
   }
 
-  @keyframes welcome-move {
-    from {
-      transform: translate(0px, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
+  to {
+    transform: translateX(100px);
   }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(200px);
+  }
+}
+
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
