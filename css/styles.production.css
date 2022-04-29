@@ -132,7 +132,7 @@ button :focus {
   margin: auto;
 }
 
-.Monica-logo {
+.page-header__item {
   float: left;
   width: 250px;
   margin-right: 40px;
