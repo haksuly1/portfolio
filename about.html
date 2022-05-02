@@ -21,87 +21,114 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
   </head>
+  
   <body>
     <header class="page-header">
-      <!-- My logo -->
-      <img
-        src="img/hakeem-logo.png"
-        alt="hakeem logo"
-        class="page-header__item"
-      />
-      <!-- Page Navigation Section -->
-      <nav class="main-Navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item">
-              Home</a
-            >
+  
+      <img src="./Img/hakeem-logo.jpg" alt="logo" class="page-header_item Monica-logo">
+  
+      <nav class="page-header_item navigation-list">
+        <ul role="menubar">
+          <li>
+            <a href="index.html" role="menuitem" class="navigation-list_item"> Home </a>
           </li>
+  
           <li role="presentation">
-            <a
-              href="about.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-            >
-              About me</a
-            >
+            <a href="about.html" role="menuitem" alt="About" class="navigation-list_item"> About-me </a>
           </li>
-          <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation-list__item"
-            >
-              Contact</a
-            >
+  
+          <li>
+            <a href="work.html" role="menuitem" class="navigation-list_item"> My Work </a>
           </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">
-              Work</a
-            >
+  
+          <li>
+            <a href="contact.html" class="navigation-list_item"> Contact </a>
           </li>
         </ul>
       </nav>
     </header>
-
+    
     <a class="email-me button" href="mailto:haksuly1@gmail.com">Email me</a>
 
-    <!-- about Me -->
-    <main>
-      <section>
-        <h1 id="about">This page is about me</h1>
-        <div class="hobby">
-          <div class="hobby__item">
-            <h2>I enjoy doing the following;</h2>
-            <ul class="list__item">
-              <li><h3>Frontend development</h3></li>
-              <li><h3>Backend development</h3></li>
-              <li><h3>Test-driven development</h3></li>
-              <li><h3>Events organisation & management</h3></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <br />
+    <div class="about-body">
+      <h1 id="about">This page is about me</h1>
       <div>
-        <a href="curriculum-vitae.pdf" class="button" target="_blank" download
-          >Download my CV</a
-        >
+        <p>This is what I enjoy doing: </p>
+        <ul class="hobby-list">
+          <li> - Front-end & back-end development</li>
+          <li> - Events organisation & management</li>
+          <li> - Time with family</li>
+        </ul>
+      <a href="curriculum-vitae.pdf" class="button" target="_blank" download>Download my CV</a>
       </div>
-      <br />
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="berlin-illustration"
-          height="505"
-          viewBox="0 0 700 505"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
+<hr>
+        <h3>My Tech Skills & Experience</h3>
+        <table class="center">
+          <thead>
+            <tr>
+              <td>Skills|</td>
+              <td>Years of Experience|</td>
+              <td>Level of Expertise|</td>
+            </tr>
+          </thead>
+          <tbody>
+      
+            <tr>
+              <td>JavaScript</td>
+              <td>1</td>
+              <td>Advanced</td>
+            </tr>
+      
+            <tr>
+              <td>React & React Native</td>
+              <td>2</td>
+              <td>Advanced</td>
+            </tr>
+      
+            <tr>
+              <td>Angular</td>
+              <td>3</td>
+              <td>Advanced</td>
+            </tr>
+      
+            <tr>
+              <td>-JQuery</td>
+              <td>4</td>
+              <td>Advanced</td>
+            </tr>
+      
+            <tr>
+              <td>-HTML5</td>
+              <td>5</td>
+              <td>Advanced</td>
+            </tr>
+      
+            <tr>
+              <td>-CSS</td>
+              <td>6</td>
+              <td>Advanced</td>
+            </tr>
+      
+            <tr>
+              <td>-SCSS</td>
+              <td>7</td>
+              <td>Advanced</td>
+            </tr>
+      
+            <tr>
+              <td>JQuery</td>
+              <td>8</td>
+              <td>Advanced</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+<hr>
+      <div class="about-body">
+        <svg xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="505" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
-            <polygon
-              id="a"
-              points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"
-            ></polygon>
+            <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917"></polygon>
           </defs>
           <g fill="none" fill-rule="evenodd">
             <g transform="translate(0 241)" class="cloud-front">
@@ -2163,35 +2190,39 @@
           </g>
         </svg>
       </div>
-
-      <div class="first-section">
-        <div class="first-section__item">
-          <h2>This is who I am</h2>
+  
+<hr>
+        <div class="about-body">
+          <h3>This is who I am</h3>
           My name is Hakeem Kayode Sulyman.<br />
-          I am a <span>Web</span> developer from Essen, Germany with background in business development and management.<br />
+          I am a <span>Web</span> developer from Essen-Germany with background in business development and management.<br />
           I also conceptualise and manage events both locally and internationally.
           <br/>
-          I am loving my new career as a Web Developer after many years in buisness.
-          <br>Particularly, my new professional experience affords me opportunity to implement
+          I am excited about my new career as a Web Developer after many years in buisness.
+          <br>Particularly, my new professional experience affords me the opportunity to implement
           <br>my customer service and satisfaction experinece in the development of smart and satifying web designs.
           <br>
-          <a href="https://github.com/haksuly1" target="_blank">Github</a>
+          <a href="https://github.com/haksuly1" target="_blank">Github me out on GitHub</a>
         </p>
         </div>
-
-        <div class="first-section__item">
+<hr>
+        <div class="about-body">
           <h3>My Career Chanage Experience</h3>
             <p>My career change and new training as a web developer is driven by the joy in creating satisfaction. 
             <br>This new experience is an opportunity to add value to any development team 
             <br>focused on enhanced user experience.</p>
 
-          <h2>My Value to an employer</h2>
+          <h3>My Value to an employer</h3>
             <p>Because I understand business goals, I am huge asset to any employer since
               <br> I can keep a focus on KPIs and fully understand its importance and principles.
+              <br>I am also able and willing to learn any tools as may be required in a job function
             </p>
-            <p>I am also able and willing to learn any tools as may be required in a job function</p>
+            </div>
 
-          <h2>Reason for Career Change</h2>
+<hr>
+
+          <div class="about-body">
+          <h3>Reason for Career Change</h3>
             <p>I made considerable mark in service provision and satisfaction specifics. 
             <br>These covers the following areas:</p>
             <p>-Contract negotiations.</p>
@@ -2208,85 +2239,36 @@
             <p>-CSS</p>
             <p>-SCSS</p>
             <p>-JQuery</p>
-            <h4>My experience in the above development tools ensures that 
-              <br>I can play smart in the following environments:</h4>
-            <p>-Front-end and back-end web development.</p>
-            <p>-Client-side and server-side programing.</p>
-            <P>-Development with JavaScript frameworks.</P>
-            <p>-Testing the development process.</p>
-            <p>-Native app development.</p>
-            <p>-Effective collaboration with development teams such as design communication, 
-              <br>Unpacking of design assets and documentations.</p>
-            <p>-Command line operation with web server frameworks and data management.</p>
+          <p>My experience in the above development tools ensures that 
+          <br>I can play smart in the following environments:
+            <br> - Front-end and back-end web development.
+            <br> - Client-side and server-side programing.
+            <br> - Development with JavaScript frameworks.
+            <br> - Testing the development process.
+            <br> - Native app development.
+            <br> - Effective collaboration with development teams such as design communication, 
+            <br> - Unpacking of design assets and documentations.
+            <br> - Command line operation with web server frameworks and data management.
+          </p>
+          </div>
 
-            <h2>What I crave for</h2>
+  <hr>
+
+          <div class="about-body">
+            <h3>What I crave for</h3>
             <p>My goal is mainly to be part of and grow with a team with a knack for smart 
               <br>and responsive web and native application development. 
               <br>I am eager to connect my experience and new learning to a clear performance driven team. 
-              <br>Ultimately to replicate my management abilities in smart web designs.</p> 
+              <br>Ultimately to replicate my management abilities in smart web designs. 
             <p>I enjoy talking about opportunities covering my area of competence.  
-              <br>Kindly hit me up with your messages via any of my contact channels.</p>
+              <br>Kindly hit me up with your messages via any of my contact channels.
+            </p>
          </div>
-
-        <div>
-          <h2>My Tech Skills & Experience</h2>
-          <table class="center">
-            <thead>
-              <tr>
-                <td>Skills|</td>
-                <td>Years of Experience|</td>
-                <td>Level of Expertise|</td>
-              </tr>
-            </thead>
-            <tbody>
-
-
-              <tr>
-                <td>JavaScript</td>
-                <td>7</td>
-                <td>Advanced</td>
-              </tr>
-
-              <tr>
-                <td>React & React Native</td>
-                <td>6</td>
-                <td>Advanced</td>
-              </tr>
-
-              <tr>
-                <td>-Angular</td>
-                <td>5</td>
-                <td>Advanced</td>
-              </tr>
-              
-              <tr>
-                <td>-HTML5</td>
-                <td>4</td>
-                <td>Advanced</td>
-              </tr>
-              
-              <tr>
-                <td>-CSS</td>
-                <td>3</td>
-                <td>Advanced</td>
-              </tr>
-              
-              <tr>
-                <td>-SCSS</td>
-                <td>2</td>
-                <td>Advanced</td>
-              </tr>
-              
-              <tr>
-                <td>JQuer</td>
-                <td>1</td>
-                <td>Advanced</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
-    </main>
+    </body>
+
+<hr>
+
     <!-- Social Media Handles -->
     <footer class="page-footer">
       <p>Find me on platforms below</p>

@@ -18,23 +18,25 @@
   </head>
   <body>
     <header class="page-header">
-      <!-- My logo -->
-      <img src="img/hakeem-logo.png" alt="hakeem logo" class="page-header__item"/>
-      <!-- Page Navigation Section -->
-      <nav class="main-Navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+  
+      <img src="./Img/hakeem-logo.jpg" alt="logo" class="page-header_item Monica-logo">
+  
+      <nav class="page-header_item navigation-list">
+        <ul role="menubar">
+          <li>
+            <a href="index.html" role="menuitem" class="navigation-list_item"> Home </a>
           </li>
+  
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+            <a href="about.html" role="menuitem" alt="About" class="navigation-list_item"> About-me </a>
           </li>
-          <li role="presentation">
-            <a
-              href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+  
+          <li>
+            <a href="work.html" role="menuitem" class="navigation-list_item"> My Work </a>
           </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+  
+          <li>
+            <a href="contact.html" class="navigation-list_item"> Contact </a>
           </li>
         </ul>
       </nav>
@@ -42,82 +44,41 @@
 
     <a class="email-me button" href="mailto:haksuly1@gmail.com">Email me</a>
 
-</section>
-    <!-- My Contact Information -->
-    <main>
-      <h2 id="contact">My Contact</h2>
-      <div class="contact">
-        <div class="contact__item">
-          <h3>ADDRESS</h3>
-          Zollvereinstraße 64
-          <br />45327 Essen, Deutschland.
-        </div>
+<div class="contact-body">
+<h2 id="contact">My Contact</h2>
+</div>
 
-        <div class="contact__item">
-          <h3>TELEPHONE/FAX</h3>
-          <a href="tel:+4917681281479">+49 176 81281479</a>
-        </div>
+<div class="contact-body">
+  Zollvereinstraße
+  <br>45327 Essen-Germany 
+  <br>
+  Telephone: <a href="tel:+4917681281479"> +49 81281479 </a> 
+  <br> Check me on LinkedIn: <a href="https://www.linkedin.com/in/hakeem-sulyman-a34b6b86/"> LinkedIn</a> 
+  <br> My Email: <a href="mailto:hakeemkayodesulyman@gmail.com">hakeemkayodesulyman(at)gmail(dot)com</a>
+  <br> My GitHub: <a href="https://github.com/haksuly1" target="_blank">Check me out on Github</a>
+  <br>
+  <p>I run medium fashion as a hobby. Check my YouTuve Channel and Web-page</p>
+  <a href="https://youtube.com/xnative" target="_blank">Youtube Channel</a>
+  <br>
+  <a href="https://xclusivelynative.com/" target="_blank">Web-page</a>
+</div>
+<br>
+<hr>
+<div class="contact-body">
+  <h3>Semd me a message now</h3>
+  <form action="" method="post">
+    <label class="standard-label" for="contact email">E-mail: </label>
+    <input type="email" id="contact email" required>
 
-        <div class="contact__item">
-          <h3>EMAIL</h3>
-          I pick my emails on the go.
-          <br /><a href="mailto:haksuly1@gmail.com"> haksuly1@gmail.com</a>
-        </div>
+    <label class="standard-label" for="my-input">Telephone: </label>
+    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="my-input">
 
-        <div class="contact__item">
-          <h3>URL</h3>
-          <a href="https://github.com/haksuly1" target="_blank">Github</a>
-          <br>
-          <a href="https://youtube.com/xnative" target="_blank">Youtube Channel</a>
-            <br>
-        </div>
-      </div>
-      
-
-      <!-- Form-->
-      <div class="form">
-        <div class="form__item">
-          <h2>Contact Form</h2>
-          <form action="process.php" method="post" id="contact-form">
-            <label class="standard-label"></label>
-            <select name="identity">
-              <option value="private"> Private</option>
-              <option value="corporate"> Corporate</option>
-            </select>
-          </form>
-        </div>
-
-        <div>
-          <label class="standard-label"> E-mail (required):</label>
-          <input type="text" name="email" placeholder="Enter Email" required />
-        </div>
-
-        <div>
-          <label class="standard-label"> Telephone (required):</label>
-          <input
-            type="tel"
-            name="telephone"
-            placeholder="Enter-telephone"
-            pattern="\d{3}[\-]d{3}[\-]{d4}"
-            required
-          />
-        </div>
-
-        <div>
-          <label class="standard-label">Message (Max. 240 characters):</label>
-          <textarea
-            placeholder="Type message"
-            maxlength="240"
-            required
-          ></textarea>
-        </div>
-
-        <div>
-          <button type="button">Send Message</button>
-        </div>
-      </div>
-    </main>
-  
+    <label class="standard-label" for="message-for-hakeem">Message: </label>
+    <textarea maxlength="240" required id="my-input2"></textarea>
+    <input type="submit" value="Send message" id="click-to-submit">
+  </form>
+</div>
+  <br>
     <footer class="page-footer">
       <div class="social-media">
         <p>Find me on platforms below</p>
