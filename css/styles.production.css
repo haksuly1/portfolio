@@ -121,6 +121,7 @@ button :focus {
   float: left;
   width: 240px;
   height: 240px;
+  margin-right: 70px;
   border-radius: 50%;
 }
 
