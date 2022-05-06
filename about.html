@@ -4,57 +4,149 @@
 <head>
   <meta charset="utf-8" />
   <title>About Me</title>
-  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/favicon-32x32.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
   <header class="page-header">
-    <img src="./Img/hakeem-logo.png" alt="logo" class=" hakeem-logo">
-    <nav class="page-header_item navigation-list">
-      <ul role="menubar">
-        <li>
-          <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
-        </li>
-
+    <img src="img/owa_logo.png" height="72" width="72" alt="logo" class="page-header__item" />
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="about.html" role="menuitem" alt="About" class="navigation-list_item">About-me</a>
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
-
-        <li>
-          <a href="work.html" role="menuitem" class="navigation-list_item">My Work</a>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About me</a>
         </li>
-
-        <li>
-          <a href="contact.html" class="navigation-list_item">Contact</a>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <a class="email-me button" href="mailto:haksuly1@gmail.com">Email me</a>
-  <hr>
 
-  <div class="about-body">
-    <h1>About me</h1>
-    <div class="about-body">
-      <p>This page is about myself. This is what I enjoy doing: </p>
-      <ul class="hobby-list">
-        <li>Frontend development</li>
-        <li>Backend development</li>
-        <li>Time with family</li>
-        <li>Events organisation & management</li>
-      </ul>
+  <div id="page-container">
+    <div class="about">
+      <h1 id="about">About me</h1>
+      <p>This is who I am</p>
+      <p>My name is Hakeem Kayode Sulyman.
+        <br />I am a <span>Web</span> developer from Essen-Germany with background
+        in business development and management.
+        <br />I am excited about my new career as a Web Developer after many years in buisness.
+        <br>Particularly, my new professional experience would affords me the opportunity to implement
+        <br>my customer service satisfaction experinece in the development of smart and satifying web designs.
+        <br>
+      </p>
 
-      <a href="curriculum-vitae.pdf" class="button" target="_blank" download>Download my CV</a>
-      <br>
-      <hr>
-      <div class="about-body">
+    <h3>My Career Chanage Experience</h3>
+          <p>My career change and new training as a web developer is driven by the joy in creating satisfaction.
+            <br>This new experience is an opportunity to add value to any development team
+            <br>focused on enhanced user experience.
+          </p>
+
+    <h3>My Value to an employer</h3>
+      <p>Because I understand business goals, I am huge asset to any employer since
+        <br> I can keep a focus on KPIs and fully understand its importance and principles.
+      </p>
+      <p>I am also able and willing to learn any tools as may be required in a job function</p>
+
+    <h3>Reason for Career Change</h3>
+    <p>After my relocation to Germany as a result of compelling family need,
+      <br>I am excited to join the design community.
+    <p>My competence is grounded in the following web development applications:</p>
+    <br>JavaScript
+    <br>React & React Native
+    <br>Angular
+    <br>HTML5
+    <br>CSS
+    <br>SCSS
+    <br>JQuery
+    <p>My experience in the above development tools ensures that
+      <br>I can play smart in the following environments:
+      <br>Front-end and back-end web development.
+      <br>Client-side and server-side programing.
+      <br>Development with JavaScript frameworks.
+      <br>Testing the development process.
+      <br>Native app development.
+      <br>Effective collaboration with development teams such as design communication
+      <br>Unpacking of design assets and documentations
+      <br>Command line operation with web server frameworks and data management.
+    </p>
+
+    <h3>What I crave for</h3>
+    <p>My goal is mainly to be part of and grow with a team with a knack for smart
+      <br>and responsive web and native application development.
+      <br>I am eager to connect my experience and new learning to a clear performance driven team.
+      <br>Ultimately to replicate my management abilities in smart web designs.
+    </p>
+    <p>I enjoy talking about opportunities covering my area of competence.
+      <br>Kindly hit me up with your messages via any of my contact channels.
+    </p>
+        
+  <h3>My Tech Skills & Experience</h3>
+        <table class="center">
+          <thead>
+            <tr>
+              <td>Skills</td>
+              <td>Years of Experience|</td>
+              <td>Level of Expertise|</td>
+            </tr>
+          </thead>
+          <tbody>
+    
+            <tr>
+              <td>JavaScript</td>
+              <td>1</td>
+              <td>Advanced</td>
+            </tr>
+    
+            <tr>
+              <td>React & React Native</td>
+              <td>2</td>
+              <td>Advanced</td>
+            </tr>
+    
+            <tr>
+              <td>-Angular</td>
+              <td>3</td>
+              <td>Advanced</td>
+            </tr>
+    
+            <tr>
+              <td>-HTML5</td>
+              <td>4</td>
+              <td>Advanced</td>
+            </tr>
+    
+            <tr>
+              <td>-CSS</td>
+              <td>5</td>
+              <td>Advanced</td>
+            </tr>
+    
+            <tr>
+              <td>-SCSS</td>
+              <td>6</td>
+              <td>Advanced</td>
+            </tr>
+    
+            <tr>
+              <td>JQuer</td>
+              <td>7</td>
+              <td>Advanced</td>
+            </tr>
+          </tbody>
+        </table>
+
         <svg xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="505" viewBox="0 0 700 505"
           xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
@@ -1380,130 +1472,9 @@
         </svg>
       </div>
 
-      <hr>
-      <div class="about-body">
-        <h3>This is who I am</h3>
-        <p>My name is Hakeem Kayode Sulyman.
-          <br />I am a <span>Web</span> developer from Essen-Germany with background
-          in business development and management.
-          <br />I am excited about my new career as a Web Developer after many years in buisness.
-          <br>Particularly, my new professional experience would affords me the opportunity to implement
-          <br>my customer service satisfaction experinece in the development of smart and satifying web designs.
-          <br>
-        </p>
-      </div>
-      <hr>
-      <div class="about-body">
-        <h3>My Career Chanage Experience</h3>
-        <p>My career change and new training as a web developer is driven by the joy in creating satisfaction.
-          <br>This new experience is an opportunity to add value to any development team
-          <br>focused on enhanced user experience.
-        </p>
-
-        <h3>My Value to an employer</h3>
-        <p>Because I understand business goals, I am huge asset to any employer since
-          <br> I can keep a focus on KPIs and fully understand its importance and principles.
-        </p>
-        <p>I am also able and willing to learn any tools as may be required in a job function</p>
-        <hr>
-        <div class="about-body"> </div>
-        <h3>Reason for Career Change</h3>
-        <p>After my relocation to Germany as a result of compelling family need,
-          <br>I am excited to join the design community.
-        <p>My competence is grounded in the following web development applications:</p>
-        <br>JavaScript
-        <br>React & React Native
-        <br>Angular
-        <br>HTML5
-        <br>CSS
-        <br>SCSS
-        <br>JQuery
-        <p>My experience in the above development tools ensures that
-          <br>I can play smart in the following environments:
-          <br>Front-end and back-end web development.
-          <br>Client-side and server-side programing.
-          <br>Development with JavaScript frameworks.
-          <br>Testing the development process.
-          <br>Native app development.
-          <br>Effective collaboration with development teams such as design communication
-          <br>Unpacking of design assets and documentations
-          <br>Command line operation with web server frameworks and data management.
-        </p>
-        <hr>
-
-        <div class="about-body">
-          <h3>What I crave for</h3>
-          <p>My goal is mainly to be part of and grow with a team with a knack for smart
-            <br>and responsive web and native application development.
-            <br>I am eager to connect my experience and new learning to a clear performance driven team.
-            <br>Ultimately to replicate my management abilities in smart web designs.
-          </p>
-          <p>I enjoy talking about opportunities covering my area of competence.
-            <br>Kindly hit me up with your messages via any of my contact channels.
-          </p>
-        </div>
-        <hr>
-
-        <div class="about-body">
-          <h3>My Tech Skills & Experience</h3>
-          <table class="center">
-            <thead>
-              <tr>
-                <td>Skills</td>
-                <td>Years of Experience|</td>
-                <td>Level of Expertise|</td>
-              </tr>
-            </thead>
-            <tbody>
-
-              <tr>
-                <td>JavaScript</td>
-                <td>1</td>
-                <td>Advanced</td>
-              </tr>
-
-              <tr>
-                <td>React & React Native</td>
-                <td>2</td>
-                <td>Advanced</td>
-              </tr>
-
-              <tr>
-                <td>-Angular</td>
-                <td>3</td>
-                <td>Advanced</td>
-              </tr>
-
-              <tr>
-                <td>-HTML5</td>
-                <td>4</td>
-                <td>Advanced</td>
-              </tr>
-
-              <tr>
-                <td>-CSS</td>
-                <td>5</td>
-                <td>Advanced</td>
-              </tr>
-
-              <tr>
-                <td>-SCSS</td>
-                <td>6</td>
-                <td>Advanced</td>
-              </tr>
-
-              <tr>
-                <td>JQuer</td>
-                <td>7</td>
-                <td>Advanced</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <hr>
       <!-- Social Media Handles -->
       <footer class="page-footer">
+      <div class="social-media"></div>
         <h6>Find me on platforms below</h6>
         <div class="social-media">
           <a href="https://github.com/haksuly1/"> <img src="img/github_icon.svg" target="_blank" alt="Github"></a>
@@ -1517,5 +1488,4 @@
       </footer>
       <script src="js/tota11y.min.js"></script>
 </body>
-
 </html>
