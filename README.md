@@ -6,7 +6,7 @@
   </head>
   <body>
 
-<h2>This is my portfolio documentation page.It was built using HTML5</h2>
+<h2>This is my portfolio documentation page.It was built using HTML5 & CSS</h2>
 
 <h3>Home Page</h3>
   <p>This is the page where you would find my brief introduction
