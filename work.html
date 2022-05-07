@@ -1,128 +1,200 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>My Work</title>
+  <title>My Portfolio page</title>
   <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/favicon-32x32.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
   <header class="page-header">
-    <img src="img/hakeem-logo.png" alt="hakeem-logo" class="hakeem-logo" />
-    <nav class="page-header_item navigation-list">
-      <ul role="menubar">
-        <li>
-          <a href="index.html" alt="Home" role="menuitem" class="navigation-list_item"> Home </a>
-        </li>
+    <img src="img/hakeem-logo.png" height="72" width="72" alt="logo" class="page-header__item" />
 
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="about.html" role="menuitem" alt="About" class="navigation-list_item"> About-me </a>
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
-
-        <li>
-          <a href="work.html" role="menuitem" alt="my-work" class="navigation-list_item"> My Work </a>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
         </li>
-
-        <li>
-          <a href="contact.html" class="navigation-list_item"> Contact </a>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
         </li>
       </ul>
     </nav>
-  </header>
+    </header>
 
-  <a class="email-me button" href="mailto:haksuly1@gmail.com">Email me</a>
+    <a class="email-me button" href="mailto:haksuly1@gmail.com">Email me</a>
 
-  <div style="text-align:center;">
-    <h4>Programing Language</h4>
-    <p>I can help in realizing both front-end and back-end with the following technologies:
-    <ul style="list-style:none;">
-      <li>React.js</li>
-      <li>Angular.js</li>
-      <li>JavaScript</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Saas</li>
-    </ul>
-  </div>
+    <div id="page-container">
+      <section>
+        <h1>Work</h1>
+        <div class="grid">
+          <div class="grid__item" style="border-radius: 25px">
+            <h2>Programing Language</h2>
+            <div class="work-info">
+              <div style="text-align:center;">
+                <h4>Programing Language</h4>
+                <p>I can help in realizing both front-end and back-end with the following technologies:
+                <ul style="list-style:none;">
+                  <li>React.js</li>
+                  <li>Angular.js</li>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Saas</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+            <div class="work-links">
+              <a class="link1" href="https://github.com/Techdaan1/Portfolio-website">Github repo</a>
+            </div>
+          </div>
 
-  <div class="project-list">
-    <div class="project-list_item">
-      <h4>React Native Mobile APP - chatApp</h4>
-      <p>
-        The project is a React Native Project. This project is a chat app for mobile devices using React Native.
-        The app provides users with a chat interface and options to share images and their location.
-      <h5>Main Tech Stacks</h5>
-      <a href="https://reactnative.dev/" target="_blank">React Native</a>
-      <br><a href="https://expo.dev/" target="_blank">Expo</a>
-      <br><a href="https://firebase.google.com/" target="_blank">Firebase Firestore</a>
-      <a href="https://github.com/haksuly1/chatApp" target="_blank">See Project</a>
-    </div>
+          <div class="grid__item" style="border-radius: 25px">
+            <h2>to-do-list-app</h2>
+            <div class="portfolio-image">
+              <img src="img/screenshot-app.png" alt="screenshot to do list app"
+                style="width: 50%; height: 50%" />
+            </div>
+            <div class="work-info">
+              <p>
+                This is a basic application that allows addition, deletion and striking out of items.
+                It was built using JavaScript & HTML
+              </p>
+            </div>
+            <div class="work-links">
+              <a class="link1" href="https://github.com/haksuly1/to-do-list-app">GitHup repo for to-do-list-app</a>
+              <a class="link2" href="https://haksuly1.github.io/to-do-list-app/">to-do-list-app</a>
+            </div>
+          </div>
 
-    <div class="project-list_item">
-      <h4>Movie App</h4>
-      This project was built with the combo of Front-end & Back-end applications. It allows users to register
-      and login to view movies. It also allow users to display all movies, have different view function like:
-      Whole movie view, profile-view, director-view, genre-view and also allow users to add & bdelete favorite movies.
-      The project was written in React.Js and HTML5.
-      </p>
-      <a href="https://github.com/haksuly1/myFlix-client" target="_blank">See Project Front-end on GitHub</a>
-      <br><a href="https://github.com/haksuly1/movie_api" target="_blank">See Project Back-end on GitHub</a>
-    </div>
+          <div class="grid__item" style="border-radius: 25px">
+            <h2>Pokemon-app</h2>
+            <div class="portfolio-image">
+              <img src="img/Screenshot-Pokemon.png" alt="screenshot pokedex" style="width: 100%; height: 100%" />
+            </div>
+            <div class="work-info">
+              <p>
+                This is a simple Pokédex application built with Javascript,
+                HTML, CSS, and Bootstrap. Users can search through a collection
+                of Pokémon that is loading from an external source(API). Images
+                and information about the specific Pokémon can be displayed in a
+                modal by clicking on a Pokémons name.
+              </p>
+            </div>
+            <div class="work-links">
+              <a class="link1" href="https://github.com/haksuly1/pokemon-app">GitHub repo for Pökemon app</a>
+              <a class="link2" href="https://haksuly1.github.io/pokemon-app/">Pokemon-app</a>
+            </div>
+          </div>
 
-    <div class="project-list_item">
-      <h4>Anglar App project - myFlix</h4>
-      <p>This is a client-side project for an application called myFlix.
-        This project is an Angular version of the Movie App that was built with the combo of Front-end & Back-end
-        pplications. It allows users to register and login to view movies. It also allow users to display
-        all movies, have different view function like: Whole movie view, profile-view, director-view, genre-view
-        and also allow users to add & bdelete favorite movies. The project was written in Angular.js - TypeScript
-        language.
-      </p>
-      <a href="https://github.com/haksuly1/myFlix-Angular-client" target="_blank">See Project Front-end on GitHub</a>
-      <br><a href="https://github.com/haksuly1/movie_api" target="_blank">See Project Back-end on GitHub</a>
-    </div>
+          <div class="grid__item" style="border-radius: 25px">
+            <h2>myFlix-client Movie App - React Application</h2>
+            <div class="portfolio-image">
+              <img src="img/Screenshot-myflix.png" alt="screenshot myFlix" style="width: 100%; height: 100%" />
+            </div>
+            <div class="work-info">
+              <p>
+                This project was built with the combo of Front-end & Back-end applications. It allows users to register
+                and login to view movies. It also allow users to display all movies, have different view function like:
+                Whole movie view, profile-view, director-view, genre-view and also allow users to add & bdelete favorite movies.
+                The project was written in React.Js and HTML5.
+              </p>
+            </div>
+            <div class="work-links">
+              <a class="link1" href="https://github.com/haksuly1/myFlix-client">Github repo for my movie App</a>
+              <a class="link2" href="https://haksuly1.github.io/myFlix-client/">Movie App</a>
+            </div>
+          </div>
 
-    <div class="project-list_item">
-      <h4>meetApp</h4>
-      <p>It was built using React and Javascript language. This is a serverless app that Filter events list by city
-        with the following options:
-        <br>It is able to filter events by city.
-        <br>It is able to show/hide an event details.
-        <br>It is able to specify the number of events from home page.
-        <br>The App is available offline.
-        <br>There is shortcut to the App on the user’s home screen.
-        <br>It displays a chart showing the number of upcoming events by city.
-      </p>
-      <a href="https://haksuly1.github.io/meetApp/" target="_blank">See Project on GitHub</a>
-    </div>
+          <div class="grid__item" style="border-radius: 25px">
+            <h2>movie_api - Front-end</h2>
+            <div class="work-info">
+              <p>
+                This is the backend (server side) of the movie app (myFlix). This is a movie database where 
+                users can search for and save information about movies. It is developed using Node.js, 
+                Express. The database is hosted on MongodbAtlas.
+                The datasbase information which users can seek includes; name of movies, release date,
+                directors and Bio, and genres. It's built using the MERN stack.
+              </p>
+            </div>
+            <div class="work-links">
+              <a class="link1" href="https://github.com/haksuly1/movie_api">Github repo for movie_api</a>
+            </div>
+          </div>
 
-    <div class="project-list_item">
-      <h4>Pokemon-app</h4>
-      <p>
-        This project is the Pokédex game functions. The application was built with JavaScript language.
-      </p>
-      <a href="https://github.com/haksuly1/pokemon-app" target="_blank">See Project on GitHub</a>
-    </div>
+          <div class="grid__item" style="border-radius: 25px">
+            <h2>MeetApp</h2>
+            <div class="portfolio-image">
+              <img src="img/screenshot-meetapp.png" alt="screenshot meet app" style="width: 100%; height: 100%" />
+            </div>
+            <div class="work-info">
+              <p>It was built using React and Javascript language. This is a serverless app 
+                <br>hat Filter events list by city with the following options:
+                <br>It is able to filter events by city.
+                <br>It is able to show/hide an event details.
+                <br>It is able to specify the number of events from home page.
+                <br>The App is available offline.
+                <br>There is shortcut to the App on the user’s home screen.
+                <br>It displays a chart showing the number of upcoming events by city.
+              </p>
+            </div>
+            <div class="work-links">
+              <a class="link1" href="https://github.com/haksuly1/meetApp">Github repo for my meetApp</a>
+              <a class="link2" href="https://haksuly1.github.io/meetApp/">meetApp</a>
+            </div>
+          </div>
 
-    <div class="project-list_item">
-      <h4>to-do-list-app</h4>
-      <p>This is a basic application that allows addition, deletion and striking out of items.
-        It was built using JavaScript & HTML
-      </p>
-      <a href="https://github.com/haksuly1/to-do-list-app/">See Project on GitHub</a>
-    </div>
-  </div>
-  <br>
+          <div class="grid__item" style="border-radius: 25px">
+            <h2>chatApp - Native Application</h2>
+            <div class="portfolio-image">
+              <img src="img/homescreen.png" alt="screenshot chat app" style="width: 50%; height: 50%" />
+            </div>
+            <div class="work-info">
+              <p>
+                The project is a React Native Project. This project is a chat app for mobile devices using React Native.
+                The app provides users with a chat interface and options to share images and their location.
+              </p>
+            </div>
+            <div class="work-links">
+              <a class="link1" href="https://github.com/haksuly1/chat">Github repo to my chatApp</a>
+            </div>
+          </div>
+
+          <div class="grid__item" style="border-radius: 25px">
+            <h2>Anglar App project - myFlix</h2>
+            <div class="portfolio-image">
+              <img src="img/screenshot-angular.png" alt="screenshot angular app" style="width: 100%; height: 100%" />
+            </div>
+            <div class="work-info">
+              <p>
+                This is a client-side project for an application called myFlix.
+                This project is an Angular version of the Movie App that was built with the combo of Front-end & Back-end
+                pplications. It allows users to register and login to view movies. It also allow users to display
+                all movies, have different view function like: Whole movie view, profile-view, director-view, genre-view
+                and also allow users to add & bdelete favorite movies. The project was written in Angular.js - TypeScript
+                language.
+              </p>
+            </div>
+            <div class="work-links">
+              <a class="link1" href="https://github.com/Techdaan1/myflix-angular-client">Github repo</a>
+              <a class="link2" href="https://techdaan1.github.io/myflix-angular-client/">Live demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
   <!-- My Social Media Handles -->
   <footer class="page-footer">
     <h6>Find me on platforms below</h6>
@@ -131,13 +203,10 @@
       <a href="https://twitter.com/haksuly1/"> <img src="img/twitter_icon.svg" target="_blank" alt="Twitter"></a>
       <a href="https://linkedin.com/in/hakeem-sulyman-a34b6b86/"> <img src="img/linkedin_icon.svg" target="_blank"
           alt="Linkedin"></a>
-    </div>
-    <br>
-    <div class="copyright">
       <h6>Hakeem Kayode Sulyman &copy; 2021. All rights reserved</h6>
     </div>
   </footer>
+</div>
   <script src="js/tota11y.min.js"></script>
 </body>
-
 </html>
