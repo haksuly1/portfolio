@@ -15,6 +15,7 @@ h1 {
   font-family: cursive;
   font-size: 30px;
   font-weight: 700;
+  color: green;
 }
 
 h2 {
@@ -26,6 +27,7 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 700;
+  color: green;
 }
 
 a:visited {
@@ -126,6 +128,7 @@ button:focus,
   display: flex;
   width: 100%;
   padding: 20px;
+  background-color: grey;
 }
 
 .page-header__item {
@@ -157,14 +160,15 @@ button:focus,
 
 .grid {
   display: inline-block;
-  padding: 20px;
+  margin-left: 50%;
+  padding: 50px;
 }
 
 .email-me {
   position: fixed;
   float: left;
   top: 400px;
-  margin-left: 20px;
+  margin-left: none;
 }
 
 @supports (display:grid) {
@@ -183,7 +187,7 @@ button:focus,
   width: auto;
   min-height: auto;
   border-style: solid;
-  border-color: black;
+  border-color: green;
 }
 
 @media all and (max-width: 500px) {
@@ -264,35 +268,3 @@ button:focus,
 .cloud-back {
   animation: 60s cloud-move-reverse infinite alternate linear;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
