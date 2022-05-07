@@ -161,6 +161,7 @@ button:focus,
 
 .email-me {
   position: fixed;
+  float: left;
   top: 400px;
   margin-left: 20px;
 }
