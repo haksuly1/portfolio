@@ -1,5 +1,5 @@
 a {
-  color: #357b70;
+  color: blue;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.4;
-  background-color: #fafbe0;
+  background-color: white;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ h3 {
 }
 
 a:visited {
-  color: #05676e;
+  color: blue;
 }
 
 a:hover,
@@ -118,7 +118,8 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: white;
+  background-color: lightgrey;
+  color: green;
 }
 
 * {
@@ -129,7 +130,7 @@ button:focus,
   display: flex;
   width: 100%;
   padding: 20px;
-  background-color: white;
+  background-color: lightgrey;
 }
 
 .page-header__item {
@@ -183,7 +184,7 @@ button:focus,
 }
 
 .grid__item {
-  background-color: lightgray;
+  background-color: lightgrey;
   width: auto;
   min-height: auto;
   border-style: solid;
