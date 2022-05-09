@@ -243,6 +243,41 @@ button:focus,
   }
 }
 
+
+
+
+
+
+@media all and (max-width: 500px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid1 {
+    grid-gap: 10px;
+  }
+
+  .grid1__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+}
+
+
+
+
+
+
+
+
 @keyframes color-change {
   from {
     fill: #edc655;
