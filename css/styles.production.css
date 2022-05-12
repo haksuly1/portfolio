@@ -118,8 +118,8 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: lightgrey;
-  color: green;
+  background-color: lightgreen;
+  color: black;
 }
 
 * {
@@ -130,7 +130,8 @@ button:focus,
   display: flex;
   width: 100%;
   padding: 20px;
-  background-color: lightgrey;
+  background-color: lightgreen;
+  Color: white;
 }
 
 .page-header__item {
