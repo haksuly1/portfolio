@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Web Development Project</title>
+  <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/favicon-32x32.png" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="css/style.production.css" />
+</head>
+
+ <body class="case-body">
+    <header class="case-header">
+      <a href="index.html" class="back-link">&#8249; Go back to main page</a>
+    </header>
+    <div class="case-study" id="case-start">
+      <h1>Case Study for <span class="myflix-style">myFlix</span>full-stack web development project</h1>
+      <div class="intro">
+        <div class="intro-content">
+          <h2><span class="heading-style">Overview</span></h2>
+          <br>
+          <p><span class="myflix-style">myFlix</span> is a web app, developed using the MERN stack, that provides users 
+            with access to information about movies, directors, and genres. Users are able to create an account, 
+            update their personal data, and create a list of favorite movies.</p>
+          <br />
+          <h2><span class="heading-style">Purpose & Context</span></h2>
+          <br>
+          <p><span class="myflix-style">myFlix</span> was a personal project I built as part of my web development course 
+            at CareerFoundry, Berlin, Germany to demonstrate my mastery of full-stack web development using frame works as React and AngularJS.</p>
+          <br />
+          <h2><span class="heading-style">Objective</span></h2>
+          <br>
+          <p>The aim of the project was to have an ambitious full-stack project I can add to my professional portfolio. 
+             The aim of this project is to solve is to build the complete server-side and client-side for the application from scratch.
+            This aim technically represents the problem to be solved</p>
+        </div>
+        <div class="intro-img">
+          <img src="img/screenshot-angular.png" alt="screenshot of movie list" />
+        </div>
+      </div>
+      <h2 class="approach-title">Approach</h2>
+      <br><br>
+      <h3><span class="heading-style">Server-Side</span></h3>
+      <div class="server-side">
+        <div class="server-content">
+          <br>
+          <p>I created a RESTful API using Node.js and Express, that interacts with a non-relational database (MongoDB). 
+            The API can be accessed via commonly used HTTP methods like GET or POST. To retrieve data from and store data in the database, 
+            CRUD methods are used. The API provides movie information in JSON format.
+          </p>
+          <br />
+          <p>
+            <a href="https://github.com/haksuly1/myFlix-client" class="endpoint-link" target="_blank"> 
+              <span class="material-icons arrow-right"> arrow_right</span><span>View my app documentation</span></a>
+          </p>
+          <br />
+          <p>To test the API, I used Postman. I also included user authentication and authorization code 
+            in the form of basic HTTP authentication and JWT authentication.</p>
+        </div>
+        <div class="server-img">
+          <img src="img/screenshot-unauthorised.png" alt="screenshot of unautohrized postman test" />
+          <img src="img/screenshot-authorised.png" alt="screenshot of authorized postman test" />
+        </div>
+      </div>
+      <div class="client-side">
+        <div class="client-content">
+          <h3><span class="heading-style">Client-Side</span></h3>
+          <br>
+          <p>It is a single-page, responsive application, developed with React and React-Redux.
+            After completing the API, I started to build the interface users would need when making requests to, 
+            and receiving responses from, the server-side.  
+            It provides several interface views, including, but not limited to, a main view (shows a list of all movies), 
+            single movie view (shows data about a single movie and allows users to add the movie to their list of favorites), 
+            a login view, a registration view and a profile view (where users can update their user data and list of favorites).</p>
+        </div>
+        <div class="client-img">
+          <div><img src="img/screenshot-loginview.png" alt="screenshot of login view" /></div>
+          <div><img src="img/screenshot-moviesview.png" alt="screenshot of movie view" /></div>
+          <div><img src="img/screenshot-profileview.png" alt="screenshot of profile view" /></div>
+        </div>
+      </div>
+      <div class="challenges">
+        <h2><span class="heading-style">Challenges</span></h2>
+        <br>
+        <p>I particularly found AngularJS framework more interesting. Despite that the development process seems quite interesting,
+           This project was still not my favourite because of the complications I later realise the TypeScriipt language of Angular 
+           framework simplified better.
+           <br>The most memorable side of the project is that I quickly became familiar with using the terminal because of the unending 
+            troubleshooting and installations.
+           <br>Eventually, the help provided by the Tutor eventually made the difference and I must say that the troubkleshooting
+            troubles was an advantage in terms of learning</p>
+      </div>
+      <div class="duration">
+        <h2><span class="heading-style">Duration</span></h2>
+        <br>
+        <p>The development of the client-side was particularly challenging. It took me a month to accomplish the objectives. 
+          Eventually, after some break and a restudy of the React documentation, a better understanding was achived 
+          as to the functionalities of React React-redux.</p>
+      </div>
+      <div class="credits">
+        <h2><span class="heading-style">Credit</span></h2>
+        <br>
+        <ul>
+          <li>Tutor: Blaise Bakundukize</li>
+          <li>Mentor: Ramadhan Aheebwa</li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-links"><a href="https://github.com/haksuly1/myFlix-client" target="_blank">Code</a>
+      <a href="https://haksuly1movieapp.herokuapp.com" target="_blank">Demo</a>
+      <a href="index.html#work" target="_blank">Back</a>
+    </div>
+
+    <section class="social case-social">
+      <ul>
+        <li>
+          <a href="https://github.com/haksuly1/"> <img src="img/github_icon.svg" target="_blank" alt="Github"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/haksuly1/"> <img src="img/twitter_icon.svg" target="_blank" alt="Twitter"></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/hakeem-sulyman-a34b6b86/"> <img src="img/linkedin_icon.svg" target="_blank" alt="Linkedin"></a>
+        </li>
+        <li>
+          <a href="	https://medium.com/@haksuly1"> <img src="img/medium_icon.svg" target="_blank" alt="Medium"></a>     
+        </li>
+      </ul>
+      
+    </section>
+    <footer class="case-footer">
+      <p class="credit">Sulyman Hakeem Kayode &copy; 2022</p>
+      <a href="#case-start"><span class="material-icons arrow-up"> keyboard_arrow_up </span></a>
+    </footer>
+     <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
+  
+
+
+
+
+<!-- My Social Media Handles -->
+<!-- 
+  <footer class="page-footer">
+    <div class="social-media">
+      <br>
+      <a href="https://github.com/haksuly1/"> <img src="img/github_icon.svg" target="_blank" alt="Github"></a>
+      <a href="https://twitter.com/haksuly1/"> <img src="img/twitter_icon.svg" target="_blank" alt="Twitter"></a>
+      <a href="https://linkedin.com/in/hakeem-sulyman-a34b6b86/"> <img src="img/linkedin_icon.svg" target="_blank"
+          alt="Linkedin"></a>
+       <a href="	https://medium.com/@haksuly1"> <img src="img/medium_icon.svg" target="_blank" alt="Medium"></a>     
+      <h6>Hakeem Kayode Sulyman &copy; 2021</h6>
+    </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+</html>
+-->
+
+<!-- <a class="email-me button" href="mailto:haksuly1@gmail.com>Email me"-->
