@@ -130,13 +130,13 @@ a {
 }
 
 .box-one {
-  min-height: 180px;
+  min-height: 120px;
   background: #cc4e56;
 }
 
 .box-two {
   position: relative;
-  background: #e35760;
+  background: lightgray;
 }
 
 .portrait {
@@ -287,6 +287,8 @@ nav {
 
 .menu-container {
   display: none;
+  background-color: lightgray;
+  margin-top: 15px;
 }
 
 .menu-container.visible {
@@ -303,7 +305,7 @@ nav {
 /* About Section */
 
 #about {
-  padding: 5em 0.5em 2em;
+  padding: 2em 0.2em 2em;
   background: white;
   color: black;
 }
@@ -315,7 +317,7 @@ nav {
 .skills-card {
   margin-bottom: 2em;
   text-align: center;
-  background-color: #b7464d;
+  background-color: lightgray;
 }
 
 .card-text {
@@ -328,7 +330,7 @@ nav {
 
 .dev-card a {
   color: #cc4e56;
-  background-color: #b7464d;
+  background-color: none;
 }
 
 .dev-card a:hover {
@@ -389,7 +391,7 @@ nav {
 /* Work Section */
 
 #work {
-  padding: 5em 0.5em 2em;
+  padding: 2em 0.2em 2em;
   color: black;
   background-color: white;
 }
@@ -407,7 +409,7 @@ nav {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 1em;
-  background: #cc4e56;
+  background: lightgray;
   -webkit-box-shadow: 2px 2px 10px -3px rgba(52, 58, 64, 0.99);
   box-shadow: 2px 2px 10px -3px rgba(52, 58, 64, 0.99);
 }
@@ -482,7 +484,7 @@ nav {
 }
 
 .title-style {
-  color: lightgreen
+  color: black;
 }
 
 .setup-link {
@@ -562,8 +564,8 @@ nav {
 
 #contact {
   padding: 2em;
-  background: #e35760;
-  color: #fff;
+  background: lightgray;
+  color: black;
 }
 
 .contact-title {
@@ -627,7 +629,7 @@ nav {
 /* Case Study Page */
 
 .study-body {
-  background: #f9f6f7;
+  background: lightgray;
   color: #343a40;
 }
 
@@ -637,7 +639,7 @@ nav {
 }
 
 .heading-style {
-  color: black;
+  color: red;
 }
 
 .study-header {
@@ -842,7 +844,7 @@ hr {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     -webkit-column-gap: 0.5em;
     -moz-column-gap: 0.5em;
     column-gap: 0.5em;
@@ -956,8 +958,8 @@ hr {
   .projects-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .project-card {
