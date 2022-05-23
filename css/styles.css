@@ -100,13 +100,13 @@ a {
 }
 
 .box-one {
-  min-height: 180px;
+  min-height: 120px;
   background: var(--primary-darker);
 }
 
 .box-two {
   position: relative;
-  background: var(--primary-color);
+  background: lightgray;
 }
 
 .portrait {
@@ -233,6 +233,8 @@ nav {
 
 .menu-container {
   display: none;
+  background-color: lightgray;
+  margin-top: 15px;
 }
 
 .menu-container.visible {
@@ -249,7 +251,7 @@ nav {
 /* About Section */
 
 #about {
-  padding: 5em 0.5em 2em;
+  padding: 2em 0.2em 2em;
   background: white;
   color: black;
 }
@@ -261,7 +263,7 @@ nav {
 .skills-card {
   margin-bottom: 2em;
   text-align: center;
-  background-color: #b7464d;
+  background-color: lightgray;
 }
 
 .card-text {
@@ -274,7 +276,7 @@ nav {
 
 .dev-card a {
   color: var(--primary-dark);
-  background-color: #b7464d;
+  background-color: none;
 }
 
 .dev-card a:hover {
@@ -326,7 +328,7 @@ nav {
 /* Work Section */
 
 #work {
-  padding: 5em 0.5em 2em;
+  padding: 2em 0.2em 2em;
   color: black;
   background-color: white;
 }
@@ -339,7 +341,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
-  background: var(--primary-darker);
+  background: lightgray;
   box-shadow: 2px 2px 10px -3px rgba(52, 58, 64, 0.99);
 }
 
@@ -412,7 +414,7 @@ nav {
 }
 
 .title-style {
-  color: lightgreen
+  color: black;
 }
 
 .arrow-right {
@@ -467,8 +469,8 @@ nav {
 
 #contact {
   padding: 2em;
-  background: var(--primary-color);
-  color: var(--primary-font-color);
+  background: lightgray;
+  color: black;
 }
 
 .contact-title {
@@ -523,7 +525,7 @@ nav {
 /* Case Study Page */
 
 .study-body {
-  background: var(--primary-bg-color);
+  background: lightgray;
   color: var(--secondary-font-color);
 }
 
@@ -533,7 +535,7 @@ nav {
 }
 
 .heading-style {
-  color: whitesmoke;
+  color: red;
 }
 
 .study-header {
@@ -644,20 +646,20 @@ nav {
   border-radius: 50%;
 }
 
-/* Medium tablet styles */
+/* Small tablet styles */
+@media screen and (min-width: 576px) {
+  .social {
+    padding: 5em 0.5em 1em;
+  }
+}
 
+/* Medium tablet styles */
 @media screen and (min-width: 760px) {
   .grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5em 1fr 0.5em;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-column-gap: 0.5em;
-    -moz-column-gap: 0.5em;
     column-gap: 0.5em;
   }
 
@@ -666,7 +668,7 @@ nav {
   }
 
   .social {
-    padding: 8em 0.5em 1em;
+    padding: 2em 0.5em 1em;
   }
 
   nav {
@@ -696,38 +698,29 @@ nav {
   }
 
   .projects-grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5em 1fr 0.5em 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-column-gap: 0.5em;
-    -moz-column-gap: 0.5em;
     column-gap: 0.5em;
   }
 
   .arrow-up {
     display: none;
   }
+}
 
-  .case-study {
-    margin: 0 10em;
-  }
+hr {
+  border: 5px solid rgb(255, 47, 61);
+  border-radius: 5px;
 }
 
 /* Large tablets and laptops */
 
 @media screen and (min-width: 992px) {
   .grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    -webkit-column-gap: 0.5em;
-    -moz-column-gap: 0.5em;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 0.5em;
   }
 
@@ -737,6 +730,7 @@ nav {
 
   .card-title {
     min-height: 74px;
+    color: green;
   }
 
   #work {
@@ -744,17 +738,11 @@ nav {
   }
 
   #dev-skills {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
 
   .intro {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -772,15 +760,8 @@ nav {
   }
 
   .server-side {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -793,11 +774,7 @@ nav {
   }
 
   .client-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -839,8 +816,8 @@ nav {
   .projects-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .project-card {
@@ -865,6 +842,7 @@ nav {
     margin: 0 30em;
   }
 }
+
 
 
 
