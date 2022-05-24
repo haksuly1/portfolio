@@ -126,16 +126,17 @@ a {
 #showcase {
   min-height: 450px;
   color: black;
+  background-color: white;
   text-align: center;
 }
 
 .box-one {
-  min-height: 120px;
+  min-height: 60px;
   background: #cc4e56;
 }
 
 .box-two {
-  position: relative;
+
   background: lightgray;
 }
 
@@ -148,6 +149,11 @@ a {
   left: 0;
   right: 0;
   border-radius: 50%;
+}
+
+.img-container {
+  display: flex;
+  margin-top: 120px;
 }
 
 #showcase h1 {
@@ -305,7 +311,7 @@ nav {
 /* About Section */
 
 #about {
-  padding: 2em 0.2em 2em;
+  padding: 5em 0.5em 5em;
   background: white;
   color: black;
 }
@@ -391,7 +397,7 @@ nav {
 /* Work Section */
 
 #work {
-  padding: 2em 0.2em 2em;
+  padding: 5em 0.5em 2em;
   color: black;
   background-color: white;
 }
@@ -754,6 +760,10 @@ nav {
 hr {
   border: 5px solid rgb(255, 47, 61);
   border-radius: 5px;
+}
+
+.page-header__item {
+  flex: 0 1 80px;
 }
 
 /* Small tablet styles */
