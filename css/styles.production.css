@@ -294,7 +294,7 @@ nav {
 .menu-container {
   display: none;
   background-color: lightgray;
-  margin-top: 15px;
+
 }
 
 .menu-container.visible {
