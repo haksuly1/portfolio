@@ -852,10 +852,3 @@ hr {
     margin: 0 30em;
   }
 }
-
-/*Paging navigation fix: remove after nextr theme update */
-@media (max-width: 64rem) {
-  .resp .paging-navigation .page-numbers {
-    display: inline-block;
-  }
-}
