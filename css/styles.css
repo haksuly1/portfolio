@@ -96,16 +96,17 @@ a {
 #showcase {
   min-height: 450px;
   color: black;
+  background-color: white;
   text-align: center;
 }
 
 .box-one {
-  min-height: 120px;
+  min-height: 60px;
   background: var(--primary-darker);
 }
 
 .box-two {
-  position: relative;
+
   background: lightgray;
 }
 
@@ -118,6 +119,11 @@ a {
   left: 0;
   right: 0;
   border-radius: 50%;
+}
+
+.img-container {
+  display: flex;
+  margin-top: 120px;
 }
 
 #showcase h1 {
@@ -251,7 +257,7 @@ nav {
 /* About Section */
 
 #about {
-  padding: 2em 0.2em 2em;
+  padding: 5em 0.5em 5em;
   background: white;
   color: black;
 }
@@ -644,6 +650,10 @@ nav {
   width: 250px;
   height: auto;
   border-radius: 50%;
+}
+
+.page-header__item {
+  flex: 0 1 80px;
 }
 
 /* Small tablet styles */
