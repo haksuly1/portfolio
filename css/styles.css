@@ -420,7 +420,8 @@ nav {
 }
 
 .title-style {
-  color: black;
+  color: red;
+  text-decoration: solid;
 }
 
 .arrow-right {
