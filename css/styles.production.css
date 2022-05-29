@@ -764,24 +764,35 @@ hr {
   flex: 0 1 80px;
 }
 
+
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .hamburger {
+    display: normal;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .hamburger {
+    display: normal;
+  }
+}
+
+
+
+
+
+
 /* Small tablet styles */
 @media screen and (min-width: 576px) {
   .social {
     padding: 5em 0.5em 1em;
-  }
-
-  .menu-container {
-    display: block;
-  }
-
-  .menu-item {
-    display: block;
-    width: auto;
-    padding: 1em;
-  }
-
-  .menu-item a {
-    padding: 0.2em 0.5em;
   }
 }
 
