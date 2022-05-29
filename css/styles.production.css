@@ -250,7 +250,7 @@ nav {
 
 .menu-item a {
   display: block;
-  color: blue;
+  color: white;
 }
 
 .hamburger {
@@ -765,19 +765,13 @@ hr {
   flex: 0 1 80px;
 }
 
-
-
-
-
-
-
-
 .navbar {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  color: #fff;
 }
 
 .nav-menu {
@@ -785,18 +779,26 @@ hr {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  color: #fff;
+}
+
+.nav-item {
+  color: #fff;
 }
 
 .study {
   font-size: 0.5rem;
+  color: #fff;
+  background-color: blue;
 }
 
 .nav-link {
+  color: #fff;
   transition: 0.7s ease;
 }
 
 .nav-link:hover {
-  color: dodgerblue;
+  color: blue;
 }
 
 .hamburger {
