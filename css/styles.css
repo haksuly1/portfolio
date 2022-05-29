@@ -659,6 +659,20 @@ nav {
   .social {
     padding: 5em 0.5em 1em;
   }
+
+  .menu-container {
+    display: block;
+  }
+
+  .menu-item {
+    display: block;
+    width: auto;
+    padding: 1em;
+  }
+
+  .menu-item a {
+    padding: 0.2em 0.5em;
+  }
 }
 
 /* Medium tablet styles */
