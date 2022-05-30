@@ -119,16 +119,14 @@ a {
   padding: 1em;
 }
 
-/* Mobile Styles */
-
 /* Header Showcase */
-
 #showcase {
   min-height: 450px;
   color: black;
   background-color: white;
   text-align: center;
 }
+
 
 .box-one {
   min-height: 60px;
@@ -139,6 +137,7 @@ a {
   min-height: 60px;
   background: lightgray;
 }
+
 
 .portrait {
   position: absolute;
@@ -765,6 +764,7 @@ hr {
   flex: 0 1 80px;
 }
 
+
 .navbar {
   min-height: 70px;
   display: flex;
@@ -779,11 +779,6 @@ hr {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  color: #fff;
-}
-
-.nav-item {
-  color: #fff;
 }
 
 .study {
@@ -802,7 +797,7 @@ hr {
 }
 
 .hamburger {
-
+  display: none;
   cursor: pointer;
 }
 
@@ -816,6 +811,7 @@ hr {
   background-color: #fff;
 }
 
+/* Mobile Styles */
 @media(max-width:768px) {
   .hamburger {
     display: block;
@@ -857,17 +853,6 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Small tablet styles */
 @media screen and (min-width: 576px) {
   .social {
@@ -881,8 +866,8 @@ hr {
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5em 1fr 0.5em;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 0.5em 1fr 0.5em 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -897,7 +882,7 @@ hr {
   }
 
   .social {
-    padding: 8em 0.5em 1em;
+    padding: 1em 0.5em 1em;
   }
 
   nav {
@@ -929,7 +914,7 @@ hr {
   .projects-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5em 1fr 0.5em 1fr;
+    -ms-grid-columns: 1fr 0.5em 1fr 0.5em;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     -webkit-box-pack: center;
@@ -955,8 +940,8 @@ hr {
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     -webkit-column-gap: 0.5em;
     -moz-column-gap: 0.5em;
     column-gap: 0.5em;
